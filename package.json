@@ -1,0 +1,32 @@
+{
+  "name": "yandex-api-wrapper",
+  "version": "0.2.0",
+  "description": "An Api wrapper for Yandex Translation API.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npx mocha test/translate.js"
+  },
+  "keywords": [
+    "api",
+    "wrapper",
+    "yandex",
+    "translation",
+    "api",
+    "translate",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "EmptyException",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.3.0",
+    "querystring": "^0.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
