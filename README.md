@@ -5,9 +5,10 @@
 ### Translating a text
 
 ```js
-    const Yandex = require('yandex-api-wrapper');
-    Yandex.translate('en', 'ja', 'Hello').then((data) => {
-        console.log(data.text); // 今日は。
+    const Yandex = require('yandex-api-wrapper');co
+    const API = new Yandex('Your-api-key');
+    API.translate('en', 'pt', 'Hi').then((data) => {
+        console.log(data.text); // ['Oi']。
     });
 ```
 
@@ -15,7 +16,8 @@
 
 ```js
     const Yandex = require('yandex-api-wrapper');
-    Yandex.getAvailableLanguages().then((data) => {
+    const API = new Yandex('Your-api-key');
+    API.getAvailableLanguages().then((data) => {
         console.log(data.dirs); 
         /*
         {"dirs":["az-ru","be-bg","be-cs","be-de","be-en","be-es","be-fr","be-it","be-pl", ... ]}
@@ -27,8 +29,9 @@
 
 ```js
     const Yandex = require('yandex-api-wrapper');
-    Yandex.detectLanguage('今日は。').then((lang) => {
-        console.log(lang);  // ja
+    const API = new Yandex('Your-api-key');
+    API.detectLanguage('Hello').then((lang) => {
+        console.log(lang);  // en
     });
 ```
 
@@ -50,6 +53,10 @@
 4. Run `npm test`
 5. If all goes well go to next step!
 6. Submit a pull request!!!!!!!!!!!!!!!!!
+
+## Obs
+The **japanese** translation is a bit problematic so if you need to translate 
+something to japanese i'd recommend using google translation api.
 
 ## Credits
 
