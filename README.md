@@ -5,10 +5,10 @@
 ### Translating a text
 
 ```js
-    const Yandex = require('yandex-api-wrapper');co
+    const Yandex = require('yandex-api-wrapper');
     const API = new Yandex('Your-api-key');
     API.translate('en', 'pt', 'Hi').then((data) => {
-        console.log(data.text); // ['Oi']。
+        console.log(data.text); // ['Oi']
     });
 ```
 
